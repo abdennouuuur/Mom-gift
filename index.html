@@ -64,150 +64,65 @@
 
 <div class="container">
     <!-- Chapter One: Our Family Story -->
-    <div class="tab" onclick="toggleTab('tab1')">
-        <h2>Chapter One: Our Family Story</h2>
-    </div>
-    <div id="tab1" class="tab-content">
-        <p>Once upon a time, in a loving family...</p>
-        <img src="family-photo.jpg" alt="Family Photo">
-        <!-- Add more content and photos as needed -->
+    <div class="tab">
+        <a href="chapter1.html">
+            <h2>Chapter One: Our Family Story</h2>
+        </a>
     </div>
 
     <!-- Chapter Two: Letters to Mom -->
-    <div class="tab" onclick="toggleTab('tab2')">
-        <h2>Chapter Two: Letters to Mom</h2>
-    </div>
-    <div id="tab2" class="tab-content">
-        <div class="letters">
-            <div class="letter">
-                <h3>From John</h3>
-                <p>Dear Mom, thank you for always being there for me...</p>
-                <img src="john.jpg" alt="John">
-            </div>
-            <div class="letter">
-                <h3>From Emily</h3>
-                <p>Mom, your love and support mean the world to me...</p>
-                <img src="emily.jpg" alt="Emily">
-            </div>
-            <!-- Add more letters as needed -->
-        </div>
+    <div class="tab">
+        <a href="chapter2.html">
+            <h2>Chapter Two: Letters to Mom</h2>
+        </a>
     </div>
 
     <!-- Chapter Three: Mom’s Wisdom -->
-    <div class="tab" onclick="toggleTab('tab3')">
-        <h2>Chapter Three: Mom’s Wisdom</h2>
-    </div>
-    <div id="tab3" class="tab-content">
-        <p>"Always believe in yourself." - Mom</p>
-        <p>"Kindness is the greatest gift." - Mom</p>
-        <!-- Add more quotes and stories -->
+    <div class="tab">
+        <a href="chapter3.html">
+            <h2>Chapter Three: Mom’s Wisdom</h2>
+        </a>
     </div>
 
     <!-- Chapter Four: Favorite Moments -->
-    <div class="tab" onclick="toggleTab('tab4')">
-        <h2>Chapter Four: Favorite Moments</h2>
-    </div>
-    <div id="tab4" class="tab-content">
-        <img src="vacation.jpg" alt="Vacation">
-        <p>Our unforgettable vacation in the mountains...</p>
-        <img src="holiday.jpg" alt="Holiday">
-        <p>Celebrating Christmas together...</p>
-        <!-- Add more photos and stories -->
+    <div class="tab">
+        <a href="chapter4.html">
+            <h2>Chapter Four: Favorite Moments</h2>
+        </a>
     </div>
 
     <!-- Chapter Five: Her Journey -->
-    <div class="tab" onclick="toggleTab('tab5')">
-        <h2>Chapter Five: Her Journey</h2>
-    </div>
-    <div id="tab5" class="tab-content">
-        <p>From childhood to the amazing woman she is today...</p>
-        <img src="childhood.jpg" alt="Childhood">
-        <p>Her childhood days...</p>
-        <img src="career.jpg" alt="Career">
-        <p>Her incredible career journey...</p>
-        <!-- Add more milestones -->
+    <div class="tab">
+        <a href="chapter5.html">
+            <h2>Chapter Five: Her Journey</h2>
+        </a>
     </div>
 
     <!-- Chapter Six: Tribute Videos -->
-    <div class="tab" onclick="toggleTab('tab6')">
-        <h2>Chapter Six: Tribute Videos</h2>
-    </div>
-    <div id="tab6" class="tab-content">
-        <div class="videos">
-            <div class="video">
-                <h3>Tribute from John</h3>
-                <video controls>
-                    <source src="john-tribute.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="video">
-                <h3>Tribute from Emily</h3>
-                <video controls>
-                    <source src="emily-tribute.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <!-- Add more videos as needed -->
-        </div>
+    <div class="tab">
+        <a href="chapter6.html">
+            <h2>Chapter Six: Tribute Videos</h2>
+        </a>
     </div>
 
     <!-- Chapter Seven: Recipes of Love -->
-    <div class="tab" onclick="toggleTab('tab7')">
-        <h2>Chapter Seven: Recipes of Love</h2>
-    </div>
-    <div id="tab7" class="tab-content">
-        <div class="recipes">
-            <div class="recipe">
-                <h3>Mom's Famous Apple Pie</h3>
-                <img src="apple-pie.jpg" alt="Apple Pie">
-                <p>Ingredients: Apples, sugar, cinnamon...</p>
-                <p>Instructions: Preheat oven to 350°F...</p>
-            </div>
-            <div class="recipe">
-                <h3>Her Special Lasagna</h3>
-                <img src="lasagna.jpg" alt="Lasagna">
-                <p>Ingredients: Pasta, cheese, tomato sauce...</p>
-                <p>Instructions: Preheat oven to 375°F...</p>
-            </div>
-            <!-- Add more recipes as needed -->
-        </div>
+    <div class="tab">
+        <a href="chapter7.html">
+            <h2>Chapter Seven: Recipes of Love</h2>
+        </a>
     </div>
 
     <!-- Chapter Eight: Guestbook of Gratitude -->
-    <div class="tab" onclick="toggleTab('tab8')">
-        <h2>Chapter Eight: Guestbook of Gratitude</h2>
-    </div>
-    <div id="tab8" class="tab-content">
-        <p>Leave a message for Mom:</p>
-        <form action="submit-message.php" method="post">
-            <textarea name="message" rows="4" cols="50" placeholder="Your message..."></textarea><br>
-            <input type="submit" value="Submit">
-        </form>
-        <!-- Display submitted messages -->
+    <div class="tab">
+        <a href="chapter8.html">
+            <h2>Chapter Eight: Guestbook of Gratitude</h2>
+        </a>
     </div>
 </div>
 
 <footer>
     <p>With love, from your family</p>
 </footer>
-
-<script>
-    function toggleTab(tabId) {
-        var content = document.getElementById(tabId);
-        var allContent = document.querySelectorAll('.tab-content');
-        allContent.forEach(function(section) {
-            if (section !== content) {
-                section.style.display = 'none';
-            }
-        });
-        if (content.style.display === 'block') {
-            content.style.display = 'none';
-        } else {
-            content.style.display = 'block';
-        }
-    }
-</script>
 
 </body>
 </html>
