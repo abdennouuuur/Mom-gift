@@ -28,13 +28,39 @@
         .tab {
             background: #f2f2f2;
             margin-bottom: 20px;
-            padding: 10px;
+            padding: 20px;
             border-radius: 8px;
             cursor: pointer;
-            transition: background 0.3s;
+            transition: background 0.3s, color 0.3s;
+            position: relative;
+            overflow: hidden;
         }
         .tab:hover {
-            background: #e0e0e0;
+            color: #fff;
+        }
+        .tab:hover:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.7;
+            z-index: -1;
+        }
+        .tab:hover.chapter1:before {
+            background-image: url('chapter1-bg.jpg');
+        }
+        .tab:hover.chapter2:before {
+            background-image: url('chapter2-bg.jpg');
+        }
+        .tab:hover.chapter3:before {
+            background-image: url('chapter3-bg.jpg');
+        }
+        .tab:hover.chapter4:before {
+            background-image: url('chapter4-bg.jpg');
         }
         .tab a {
             text-decoration: none;
@@ -56,25 +82,25 @@
 </header>
 
 <div class="container">
-    <div class="tab">
+    <div class="tab chapter1">
         <a href="chapter1.html">
             <h2>Chapter One: Our Family Story</h2>
         </a>
     </div>
 
-    <div class="tab">
+    <div class="tab chapter2">
         <a href="chapter2.html">
             <h2>Chapter Two: Letters to Mom</h2>
         </a>
     </div>
 
-    <div class="tab">
+    <div class="tab chapter3">
         <a href="chapter3.html">
             <h2>Chapter Three: Mom’s Wisdom</h2>
         </a>
     </div>
 
-    <div class="tab">
+    <div class="tab chapter4">
         <a href="chapter4.html">
             <h2>Chapter Four: Favorite Moments</h2>
         </a>
@@ -87,4 +113,5 @@
 
 </body>
 </html>
+
 
