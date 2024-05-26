@@ -23,6 +23,16 @@
             max-width: 800px;
             margin: 0 auto;
         }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: calc(50% - 10px);
+            height: auto;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
@@ -30,9 +40,13 @@
         <h1>Chapter One: Our Family Story</h1>
     </header>
     <div class="content">
-        <p>Our family story is filled with beautiful memories, laughter, and love. From the moment we all came together, we created a bond that is unbreakable and filled with joy. Our home has always been a place of warmth and comfort, where we have shared countless moments of happiness and support.</p>
-        <p>Mom, you have been the heart of our family, always there to guide us with your wisdom and shower us with your unconditional love. Your strength and kindness have been the pillars that have held us together through thick and thin. We are grateful for every moment we have spent together, and for the love and care you have given us.</p>
-        <p>As we look back on our journey, we cherish the memories of family vacations, holiday celebrations, and everyday moments that have brought us closer. Thank you for being the incredible mother that you are and for making our family story so special.</p>
+        <div class="gallery">
+            <img src="images/family1.jpg" alt="Family Photo 1">
+            <img src="images/family2.jpg" alt="Family Photo 2">
+            <img src="images/family3.jpg" alt="Family Photo 3">
+            <img src="images/family4.jpg" alt="Family Photo 4">
+        </div>
     </div>
 </body>
 </html>
+
