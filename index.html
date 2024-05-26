@@ -55,18 +55,22 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 20px;
+            background-color: rgba(255, 235, 205, 0.9); /* Semi-transparent beige background */
             text-align: center;
-            transition: opacity 0.3s;
-            opacity: 0; /* Initially hidden */
+            transition: transform 0.3s ease; /* Added animation for sliding effect */
+            transform: translateY(100%); /* Initially hidden below the tab */
         }
         .tab:hover .tab-content {
-            opacity: 1; /* Show content on hover */
+            transform: translateY(0); /* Slide up on hover */
+        }
+        .tab-content h2 {
+            color: brown; /* Change text color to brown */
+            margin: 0;
         }
         .tab a {
             text-decoration: none;
-            color: beige; /* Change text color to beige */
+            color: transparent; /* Hide the text initially */
             display: block;
             text-align: center; /* Center text within tab */
         }
@@ -120,4 +124,5 @@
 
 </body>
 </html>
+
 
