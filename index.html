@@ -38,8 +38,10 @@
         .tab:hover {
             color: #fff;
         }
-        .tab:hover:before {
-            content: '';
+        .tab:hover .tab-background {
+            opacity: 0.7;
+        }
+        .tab-background {
             position: absolute;
             top: 0;
             left: 0;
@@ -47,25 +49,15 @@
             height: 100%;
             background-size: cover;
             background-position: center;
-            opacity: 0.7;
+            opacity: 0;
+            transition: opacity 0.3s;
             z-index: -1;
-        }
-        .tab.chapter1:hover:before {
-            background-image: url('https://github.com/abdennouuuur/Mom-gift/blob/main/chapter1-bg.jpg?raw=true');
-        }
-        .tab.chapter2:hover:before {
-            background-image: url('https://github.com/abdennouuuur/Mom-gift/blob/main/chapter2-bg.jpg?raw=true');
-        }
-        .tab.chapter3:hover:before {
-            background-image: url('https://github.com/abdennouuuur/Mom-gift/blob/main/chapter3-bg.jpg?raw=true');
-        }
-        .tab.chapter4:hover:before {
-            background-image: url('https://github.com/abdennouuuur/Mom-gift/blob/main/chapter4-bg.jpg?raw=true');
         }
         .tab a {
             text-decoration: none;
             color: inherit;
             display: block;
+            position: relative;
         }
         footer {
             text-align: center;
@@ -86,24 +78,28 @@
         <a href="chapter1.html">
             <h2>Chapter One: Our Family Story</h2>
         </a>
+        <div class="tab-background" style="background-image: url('images/chapter1-bg.jpg');"></div>
     </div>
 
     <div class="tab chapter2">
         <a href="chapter2.html">
             <h2>Chapter Two: Letters to Mom</h2>
         </a>
+        <div class="tab-background" style="background-image: url('images/chapter2-bg.jpg');"></div>
     </div>
 
     <div class="tab chapter3">
         <a href="chapter3.html">
             <h2>Chapter Three: Mom’s Wisdom</h2>
         </a>
+        <div class="tab-background" style="background-image: url('images/chapter3-bg.jpg');"></div>
     </div>
 
     <div class="tab chapter4">
         <a href="chapter4.html">
             <h2>Chapter Four: Favorite Moments</h2>
         </a>
+        <div class="tab-background" style="background-image: url('images/chapter4-bg.jpg');"></div>
     </div>
 </div>
 
