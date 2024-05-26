@@ -7,54 +7,45 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
+            background-color: #ffebcd;
             color: #333;
             margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
             padding: 20px;
         }
         header {
-            background-color: #ffebcd;
-            padding: 20px;
             text-align: center;
+            padding: 20px;
         }
         h1 {
             font-family: 'Georgia', serif;
         }
         .content {
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
+            max-width: 800px;
+            margin: 0 auto;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #ffebcd;
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: calc(50% - 10px);
+            height: auto;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Chapter Two: Mom's Wisdom</h1>
-</header>
-
-<div class="container">
+    <header>
+        <h1>Chapter Two: Mom's Wisdom</h1>
+    </header>
     <div class="content">
-        <p>
-            Mom, your wisdom has always been a beacon of light in our lives. Your insightful advice and thoughtful guidance have helped us grow and thrive. Whether it was navigating school projects, making tough decisions, or simply understanding the complexities of life, you were always there with the perfect words of wisdom. Your lessons on integrity, resilience, and empathy have shaped us into better individuals. Thank you for imparting your knowledge and for being our greatest teacher. Your wisdom is a precious gift that we carry with us every day.
-        </p>
+        <div class="gallery">
+            <img src="images/wisdom1.jpg" alt="Mom's Wisdom Photo 1">
+            <img src="images/wisdom2.jpg" alt="Mom's Wisdom Photo 2">
+            <img src="images/wisdom3.jpg" alt="Mom's Wisdom Photo 3">
+            <img src="images/wisdom4.jpg" alt="Mom's Wisdom Photo 4">
+        </div>
     </div>
-</div>
-
-<footer>
-    <p>With love, from your family</p>
-</footer>
-
 </body>
 </html>
-
