@@ -7,66 +7,45 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
+            background-color: #ffebcd;
             color: #333;
             margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
             padding: 20px;
         }
         header {
-            background-color: #ffebcd;
-            padding: 20px;
             text-align: center;
+            padding: 20px;
         }
         h1 {
             font-family: 'Georgia', serif;
         }
         .content {
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
+            max-width: 800px;
+            margin: 0 auto;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #ffebcd;
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: calc(50% - 10px);
+            height: auto;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Chapter Four: Messages of Love</h1>
-</header>
-
-<div class="container">
+    <header>
+        <h1>Chapter Four: Messages of Love</h1>
+    </header>
     <div class="content">
-        <p>
-            Mom, we all want to take a moment to tell you how much we love and appreciate you. Your love has been a constant source of strength and comfort in our lives. You are the heart of our family, and we are so grateful for everything you do. Here are some messages from each of us:
-        </p>
-        <p>
-            <strong>[Your Name]:</strong> Mom, your kindness and generosity have always inspired me. Thank you for being my rock and my best friend. I love you more than words can say.
-        </p>
-        <p>
-            <strong>[Sibling's Name]:</strong> Mom, your love and support have meant the world to me. You have a heart of gold, and I am so lucky to have you as my mother. I love you!
-        </p>
-        <p>
-            <strong>[Another Family Member]:</strong> You are the glue that holds our family together, Mom. Your love, patience, and understanding are unmatched. Thank you for everything. We love you dearly.
-        </p>
-        <p>
-            Each of us has our own unique way of saying it, but the message is the same: We love you, Mom. Thank you for being the incredible person you are.
-        </p>
+        <div class="gallery">
+            <img src="images/love1.jpg" alt="Message of Love 1">
+            <img src="images/love2.jpg" alt="Message of Love 2">
+            <img src="images/love3.jpg" alt="Message of Love 3">
+            <img src="images/love4.jpg" alt="Message of Love 4">
+        </div>
     </div>
-</div>
-
-<footer>
-    <p>With love, from your family</p>
-</footer>
-
 </body>
 </html>
-
