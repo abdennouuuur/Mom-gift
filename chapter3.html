@@ -7,54 +7,45 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
+            background-color: #ffebcd;
             color: #333;
             margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
             padding: 20px;
         }
         header {
-            background-color: #ffebcd;
-            padding: 20px;
             text-align: center;
+            padding: 20px;
         }
         h1 {
             font-family: 'Georgia', serif;
         }
         .content {
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
+            max-width: 800px;
+            margin: 0 auto;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #ffebcd;
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: calc(50% - 10px);
+            height: auto;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Chapter Three: Fun Memories</h1>
-</header>
-
-<div class="container">
+    <header>
+        <h1>Chapter Three: Fun Memories</h1>
+    </header>
     <div class="content">
-        <p>
-            Mom, our lives are filled with fun memories because of you. From family vacations to impromptu dance parties in the living room, you've always known how to make life joyous and full of laughter. Whether it was baking cookies together on a rainy day or cheering us on at our school events, your enthusiasm and love made every moment special. These memories are more than just happy times; they are the fabric of our family, stitched together with your love and joy. Thank you for all the wonderful times and for being the heart of our happiest memories.
-        </p>
+        <div class="gallery">
+            <img src="images/fun1.jpg" alt="Fun Memory 1">
+            <img src="images/fun2.jpg" alt="Fun Memory 2">
+            <img src="images/fun3.jpg" alt="Fun Memory 3">
+            <img src="images/fun4.jpg" alt="Fun Memory 4">
+        </div>
     </div>
-</div>
-
-<footer>
-    <p>With love, from your family</p>
-</footer>
-
 </body>
 </html>
-
