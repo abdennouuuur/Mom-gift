@@ -30,16 +30,12 @@
         }
         .tab {
             width: calc(25% - 20px); /* Adjust width for 4 items per row */
-            background: #f2f2f2;
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background 0.3s, color 0.3s;
-            position: relative;
-            overflow: hidden;
             background-size: cover; /* Ensure background image covers the tab */
             background-position: center; /* Center the background image */
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            transition: background 0.3s;
         }
         .tab.chapter1 {
             background-image: url('images/chapter1-bg.jpg');
@@ -52,6 +48,23 @@
         }
         .tab.chapter4 {
             background-image: url('images/chapter4-bg.jpg');
+        }
+        .tab:hover {
+            background-color: #f2f2f2;
+        }
+        .tab-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            text-align: center;
+            transition: opacity 0.3s;
+            opacity: 0; /* Initially hidden */
+        }
+        .tab:hover .tab-content {
+            opacity: 1; /* Show content on hover */
         }
         .tab a {
             text-decoration: none;
@@ -74,24 +87,32 @@
 
 <div class="container">
     <div class="tab chapter1">
-        <a href="chapter1.html">
-            <h2>Chapter One: Our Family Story</h2>
-        </a>
+        <div class="tab-content">
+            <a href="chapter1.html">
+                <h2>Chapter One: Our Family Story</h2>
+            </a>
+        </div>
     </div>
     <div class="tab chapter2">
-        <a href="chapter2.html">
-            <h2>Chapter Two: Mom's Wisdom</h2>
-        </a>
+        <div class="tab-content">
+            <a href="chapter2.html">
+                <h2>Chapter Two: Mom's Wisdom</h2>
+            </a>
+        </div>
     </div>
     <div class="tab chapter3">
-        <a href="chapter3.html">
-            <h2>Chapter Three: Fun Memories</h2>
-        </a>
+        <div class="tab-content">
+            <a href="chapter3.html">
+                <h2>Chapter Three: Fun Memories</h2>
+            </a>
+        </div>
     </div>
     <div class="tab chapter4">
-        <a href="chapter4.html">
-            <h2>Chapter Four: Messages of Love</h2>
-        </a>
+        <div class="tab-content">
+            <a href="chapter4.html">
+                <h2>Chapter Four: Messages of Love</h2>
+            </a>
+        </div>
     </div>
 </div>
 
@@ -101,3 +122,4 @@
 
 </body>
 </html>
+
