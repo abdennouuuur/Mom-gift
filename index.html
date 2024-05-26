@@ -52,15 +52,15 @@
         }
         .tab-content {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             padding: 20px;
             background-color: rgba(255, 235, 205, 0.9); /* Semi-transparent beige background */
             text-align: center;
             transition: opacity 0.3s;
             opacity: 0; /* Initially hidden */
+            z-index: 1;
         }
         .tab:hover .tab-content {
             opacity: 1; /* Show content on hover */
@@ -68,11 +68,6 @@
         .tab-content h2 {
             color: brown; /* Change text color to brown */
             margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1;
         }
         .tab a {
             text-decoration: none;
@@ -98,32 +93,32 @@
 
 <div class="container">
     <div class="tab chapter1">
-        <div class="tab-content">
-            <a href="chapter1.html">
+        <a href="chapter1.html">
+            <div class="tab-content">
                 <h2>Chapter One: Our Family Story</h2>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
     <div class="tab chapter2">
-        <div class="tab-content">
-            <a href="chapter2.html">
+        <a href="chapter2.html">
+            <div class="tab-content">
                 <h2>Chapter Two: Mom's Wisdom</h2>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
     <div class="tab chapter3">
-        <div class="tab-content">
-            <a href="chapter3.html">
+        <a href="chapter3.html">
+            <div class="tab-content">
                 <h2>Chapter Three: Fun Memories</h2>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
     <div class="tab chapter4">
-        <div class="tab-content">
-            <a href="chapter4.html">
+        <a href="chapter4.html">
+            <div class="tab-content">
                 <h2>Chapter Four: Messages of Love</h2>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
 </div>
 
@@ -133,4 +128,3 @@
 
 </body>
 </html>
-
